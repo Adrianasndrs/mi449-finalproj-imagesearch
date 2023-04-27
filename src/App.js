@@ -3,6 +3,8 @@ import Images from "./components/Images";
 import Jumbotron from "./components/Jumbotron";
 import SearchField from "./components/SearchField";
 import useAxios from "./hooks/useAxios";
+import TextAnim from "./components/TextAnim";
+
 
 // Create Context
 export const ImageContext = createContext();
@@ -27,7 +29,10 @@ function App() {
         <SearchField />
       </Jumbotron>
       <Images />
+      <TextAnim/>
     </ImageContext.Provider>
+    
+   
   );
 }
 
