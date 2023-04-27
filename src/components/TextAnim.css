@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+html { height: 100%; display: flex; }
+body { margin: auto; }
+
+
+.splitting .char {
+  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+    opacity: 0;
+  }
+}
