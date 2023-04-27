@@ -11,7 +11,7 @@ import TextAnim from "./components/TextAnim";
 export const ImageContext = createContext();
 
 function App() {
-  const [searchImage, setSearchImage] = useState('');
+  const [searchImage, setSearchImage] = useState('Images');
   const { response, isLoading, error, fetchData } = useAxios(`search/
   photos?page=1&query=cats&client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`);
 
