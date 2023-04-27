@@ -9,13 +9,13 @@ const SearchField = () => {
     setSearchValue(e.target.value);
   }
   const handleButtonSearch = () => {
-    fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+    fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`)
     setSearchValue("");
     setSearchImage(searchValue);
   }
   const handleEnterSearch = e => {
     if(e.key === 'Enter') {
-      fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+      fetchData(`search/photos?page=1&query=${searchValue}&client_id=${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`)
       setSearchValue("");
       setSearchImage(searchValue);
     }
